@@ -1,0 +1,10 @@
+{
+  "header": {
+    "connect-modal": {
+      "onboard-text": "Oops... It looks like you don't have a MetaMask extension. Click here to install MetaMask and come back later to connect your wallet:",
+      "onboard-btn": "Install MetaMask",
+      "connect-text": "Click here to connect your MetaMask wallet:",
+      "connect-btn": "Connect MetaMask"
+    }
+  }
+}

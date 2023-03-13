@@ -1,0 +1,46 @@
+@import '../../../styles/color-palette.scss';
+@import '../../../styles/mixins.scss';
+
+.close_icon {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  fill: $dark-blue;
+}
+
+.modal_wrap {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  padding: 45px 25px 25px 25px;
+  width: 450px;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: $light-01;
+  box-sizing: border-box;
+  z-index: 10;
+  animation: show-up .3s ease;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(37,41,66,0.5);
+  animation: show-up .3s ease;
+}
+
+@keyframes show-up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,96 @@
+@import '../../styles/color-palette.scss';
+@import '../../styles//mixins.scss';
+
+.header_nav {
+  @include align-items-center;
+  padding: 0 30px;
+  height: 80px;
+}
+
+.nav_list {
+  @include align-items-center;
+
+  & > li {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.nav_link {
+  text-decoration: none;
+  @include font-size(700, 17px, 22px);
+  color: $dark-blue;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $violet-03;
+  }
+}
+
+.connect_btn {
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 0 20px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  box-sizing: border-box;
+  @include font-size(600, 17px, 22px);
+  color: $light-01;
+  background-color: $dark-blue;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: $violet-01;
+    color: $dark;
+  }
+}
+
+.connection_modal_text {
+  @include font-size(500, 20px, 30px);
+  color: $dark-blue;
+}
+
+.modal_btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 0 20px;
+  width: 300px;
+  height: 46px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  box-sizing: border-box;
+  background-color: $dark-blue;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: $violet-01;
+  }
+
+  &:hover p {
+    color: $dark;
+  }
+
+  & > img {
+    margin-right: 15px;
+    width: 27px;
+  }
+
+  & > p {
+    @include font-size(600, 17px, 22px);
+    color: $light-01;
+    transition: color 0.5s ease;
+  }
+}
+
+.account_icon {
+  margin-left: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgb(255,36,109);
+  background: radial-gradient(circle, rgba(255,36,109,1) 0%, rgba(89,107,217,1) 100%);
+}

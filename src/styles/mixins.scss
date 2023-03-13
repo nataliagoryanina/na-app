@@ -1,0 +1,16 @@
+@mixin font-size ($fontWeight, $fontSize, $fontHeight) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $fontHeight;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin align-items-center {
+  display: flex;
+  align-items: center;
+}
